@@ -35,6 +35,9 @@ case "$jenis" in
         ;;
 esac
 
+# Menyalin file uEnv.ini ke direktori hasil
+cp "$CHIPSET/uEnv.ini" "$HASIL/"
+
 # Menjalankan perintah mkimage untuk chipset yang dipilih
 process_chipset() {
     local script="$1"
