@@ -29,14 +29,16 @@ mkdir -p $HASIL
 case "$jenis" in
     s805)
         CHIPSET=s805
+        FILE_EXTENSION="txt"
         ;;
     s905)
         CHIPSET=s905
+        FILE_EXTENSION="ini"
         ;;
 esac
 
-# Menyalin file uEnv.ini ke direktori hasil
-cp "$CHIPSET/uEnv.ini" "$HASIL/"
+# Menyalin file konfigurasi ke direktori hasil
+cp "$CHIPSET/uEnv.$FILE_EXTENSION" "$HASIL/uEnv.$FILE_EXTENSION"
 
 # Menjalankan perintah mkimage untuk chipset yang dipilih
 process_chipset() {
