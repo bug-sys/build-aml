@@ -3,8 +3,8 @@
 
 # Memproses jenis chipset/SoC yang ingin dibuat
 echo -e "\e[33mPilih jenis chipset/SoC yang ingin Anda buat:\e[0m"
-echo "1. AMLs805"
-echo "2. AMLs905"
+echo "1. Amlogic s805"
+echo "2. Amlogic s905"
 read -p "Masukkan nomor chipset yang ingin Anda buat (1/2): " nomor
 
 # Validasi pilihan pengguna
