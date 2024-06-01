@@ -38,7 +38,9 @@ case "$jenis" in
 esac
 
 # Menyalin file konfigurasi ke direktori hasil
-cp "$CHIPSET/uEnv.$FILE_EXTENSION" "$HASIL/uEnv.$FILE_EXTENSION"
+for ext in "${FILE_EXTENSIONS[@]}"; do
+    cp "$CHIPSET/uEnv.$ext" "$HASIL/uEnv.$ext"
+done
 
 # Menjalankan perintah mkimage untuk chipset yang dipilih
 process_chipset() {
