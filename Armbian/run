@@ -29,11 +29,11 @@ mkdir -p $HASIL
 case "$jenis" in
     s805)
         CHIPSET=s805
-        FILE_EXTENSION="txt"
+        FILE_EXTENSIONS=("txt" "ini")
         ;;
     s905)
         CHIPSET=s905
-        FILE_EXTENSION="ini"
+        FILE_EXTENSIONS=("txt" "ini")
         ;;
 esac
 
